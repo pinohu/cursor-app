@@ -6,17 +6,15 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: ['class', '[data-theme="dark"]'],
   theme: {
     extend: {
       colors: {
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: 'var(--primary)',
+          foreground: 'var(--primary-foreground)',
         },
-        border: 'hsl(var(--border))',
       },
     },
   },

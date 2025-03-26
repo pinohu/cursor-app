@@ -10,11 +10,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center p-4">
       <Authenticator
         initialState="signIn"
-        services={{
-          async handleSignIn() {
-            router.replace('/dashboard')
-          },
-        }}
+        signUpAttributes={['email']}
       >
         {({ signOut }) => (
           <div>
